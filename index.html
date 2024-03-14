@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List App</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body class="montserrat-body">
+    <header>
+        <div id="header-title-block">
+            <img id="logo" src="assets/check.png" alt="checkmark">
+            <h1>The Lister</h1>
+            <h3>App</h3>
+        </div>
+        <nav id="menu">
+            <a class="menu-link" href="#">To Do</a>
+            <a class="menu-link" href="#">About</a>
+        </nav>        
+    </header>
+    <main>
+        <section id="form-section">
+            <h3>Add A To-Do</h3>
+            <form>
+                <label id="add">Add To Your List
+                    <input type="text" id="to-do" name="todo" placeholder="Describe Task">
+                </label>
+            </form>
+            <button id="add-task-button">Add Task</button>
+            <h3 id="error-message"></h3>
+        </section>
+        <div id="two-col">
+            <section id="the-list">
+                <h3>My To-Do List</h3>
+                <ul>
+                </ul>
+            </section>
+            <section id="the-count">
+                <h3>Task Count: </h3>
+                <p class="taskCount">0</p>
+            </section>
+        </div>
+    </main>
+    <!-- <footer>I'm A Footer 🙂</footer> -->
+</body>
+</html>
